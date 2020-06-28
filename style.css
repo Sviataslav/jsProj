@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+body{
+    margin: 0;
+    
+}
+#entryBlock{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 16, 16, 0.829);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: 0.3s all ease-in;
+    
+
+}
+#entryForm{
+    width: 300px;
+    height: 180px;
+    margin: 25vh auto;
+    background-color: rgb(102, 186, 224);
+    border: rgb(70, 63, 63) solid 2px;
+    border-radius: 5%;
+    opacity: 90%;
+
+
+    
+}
+.emailDiv{
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+.passwordDiv{
+    margin-left: 5px;
+}
+.emailP{
+    color: ivory;
+    float: left;
+    margin: 0;
+    padding-right: 10px;
+
+}
+.passwordP{
+    color: ivory;
+    float: left;
+    margin: 0;
+    padding-right: 1px;
+}
+#entryHeader{
+    text-align: center;
+    color: ivory;
+    font-style: oblique;
+    font-size: large;
+}
+.entryButtonsBlock{
+    margin-top: 15px;
+    text-align: center;
+}
+#errMessage{
+    margin: 3px;
+    text-align: center;
+    color: rgb(177, 43, 26);
+}
+
+
+
+
+
+
+#topBar{
+    height: 40px;
+    background-color: rgba(36, 31, 31, 0.801);
+    display: flex;
+    justify-content: space-between;
+}
+#menu{
+    font-family: Stalinist One;
+    color: rgba(13, 243, 13, 0.801);
+    font-size: small;
+    font-weight: 700;
+    display: flex;
+    height: 100%;
+    width: 250px;
+    justify-content: space-between;
+}
+#menu__main{
+    background-color: rgba(36, 31, 31, 0.801);
+    padding-top: 10px;
+    border: 1px solid rgba(13, 243, 13, 0.801);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#menu__clients{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#menu__map{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#topBar__info{
+    font-family: Stalinist One;
+    font-size: small;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: chartreuse;
+}
+#mainPage{
+    width: 99vw;
+    height: 200px;
+    background-color: rgba(75, 67, 67, 0.699);
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 3px solid black;
+    width: 70vw;
+}
+.mainpageHeader{
+    text-align: center;
+    padding-top: 10px;
+    font-family: Stalinist One;
+    color: rgba(13, 243, 13, 0.801);
+    font-size: x-large;
+    font-weight: 400;
+}
+#mainPage__loginData{
+    text-align: center;
+    font-family: Stalinist One;
+    color: rgba(13, 243, 13, 0.801);
+    font-size: medium;
+    font-weight: 300;
+}
+
+#clientsBlock{
+    display: none;
+}
+#clients{
+    border: 2px solid black;
+    background-color: rgba(184, 245, 192, 0.829);
+    margin: 0 auto;
+}
+.deleteButtons{
+    background-color: rgb(248, 74, 74);
+    color: white;
+}
+
+
+
+
+#modalDelete{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(37, 70, 70, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: 0.3s all ease-in;
+    display: none;
+}
+.modalDelete__wind{
+    width: 300px;
+    height: 100px;
+    margin: 25vh auto;
+    background-color: rgb(219, 61, 61);
+    border: rgb(70, 63, 63) solid 2px;
+    border-radius: 20px;
+    opacity: 90%;
+    font-style: oblique;
+    font-size: large;
+}
+.modalDelete__text{
+    text-align: center;
+    margin-bottom: 4px;
+}
+.modalDelete__buttons{
+    text-align: center;
+}
+
+
+#modalMessage{
+    position: fixed;
+    width: 150px;
+    height: 60px;
+    margin-top: 90vh;
+    margin-left: 80vw;
+    background-color: rgba(226, 221, 221, 0.836);
+    border: rgb(70, 63, 63) solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+#modalMessage__closeBtn{
+    margin-left: 120px;
+    border: none;
+    color: red;
+    background-color: rgba(250, 235, 215, 0.705);
+}
+.modalMessage__text{
+    margin: 0px;
+    
+}
+
+
+
+#clientsInformationBlock{
+    height: 100px;
+    background-color: rgba(36, 31, 31, 0.801);
+    border: black 5px solid;
+    color: rgba(13, 243, 13, 0.801);
+    width: 58vw;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Stalinist One;
+    font-size: small;
+    font-weight: 300;
+}
+
+
+
+#upButton{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-top: 90vh;
+    margin-left: 90vw;
+    background-color: rgba(226, 221, 221, 0.836);
+    border: rgb(70, 63, 63) solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+.upButton__redArrow{
+    border: 20px solid transparent;
+    border-bottom: 20px solid rgba(255, 0, 0, 0.527);
+}
+
+
+#mapPage{
+    display: none;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80vw;
+    height: 80vh;
+    border: 3px solid rgba(36, 31, 31, 0.801);
+}

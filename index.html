@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="modalDelete">
+        <div class="modalDelete__wind">
+            <p class="modalDelete__text">
+                Вы действительно хотите удалить пользователя?
+            </p>
+            <div class="modalDelete__buttons">
+                <button id="confirmDeleteButton" onclick="clickDel(1)">
+                    Да
+                </button>
+                <button id="cancelDeleteButton" onclick="clickDel(0)">
+                    Отмена
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="modalMessage">
+        <button id="modalMessage__closeBtn" onclick="closeModalMessage()">
+            x
+        </button>
+        <p class="modalMessage__text">
+            Данные успешно удалены
+        </p>
+    </div>
+    <div class="block">
+        <div id="entryBlock">
+            <form id="entryForm" name="enForm" onsubmit="return false">
+                <p id="entryHeader">
+                    Вход в систему
+                </p>
+                <div class="emailDiv">
+                    <p class="emailP">Введите Email:</p>
+                    <input type="email" required id="entryFormEmail" placeholder="sasha@gmail.com" title="Введите свой Email" >
+                </div>
+                <div class="passwordDiv">
+                    <p class="passwordP">Введите пароль:</p>
+                    <input type="password" required id="entryFormPassword" placeholder="*********" title="Введите свой пароль">
+                </div>
+                <p id="errMessage">
+                    &#8195
+                </p>
+                <div class="entryButtonsBlock">
+                    <button id="entryButtonLog" onclick="logIn()">
+                        Войти
+                    </button>
+                    <button id="entryButtonReg" onclick="registration()">
+                        Регистрация
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- Главная страница-->
+        <div id="mainPageBlock">
+            <div id="topBar">
+                <div id="menu">
+                    <div id="menu__main">
+                        Главная
+                    </div>
+                    <div id="menu__clients">
+                        Клиенты
+                    </div>
+                    <div id="menu__map">
+                        Карта
+                    </div>
+                </div>
+                <div id="topBar__info">
+                    &#8195
+                </div>
+            </div>
+            <div id="mainPage">
+                <p class="mainpageHeader">
+                    Ваши данные входа
+                </p>
+                <p id="mainPage__loginData">
+
+                </p>
+            </div>
+        </div>
+        <!--Страница Клиенты-->
+        <div id="clientsBlock">
+            <div id="upButton" onclick="moveUp()">
+                <div class="upButton__redArrow">
+                    
+                </div>
+            </div>
+            <div id="clientsInformationBlock">
+                &#8195
+            </div>
+            <table id="clients">
+                <tr>
+                    <th>
+                        №
+                    </th>
+                    <th>
+                        Имя
+                    </th>
+                    <th>
+                        Место работы
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Телефон
+                    </th>
+                    <th>
+                        Сумма на счету
+                    </th>
+                    <th>
+                        Дата регистрации
+                    </th>
+                    <th>
+                        Удалить
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        <!--Страница карта-->
+        
+        <div id="mapPage">
+            
+        </div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEHl6EHY5x2d9bOR0PWe_M7fHTntZyCWY&callback=initMap&libraries=&v=weekly" async
+      defer
+    ></script>
+    <script src="./script.js">
+
+    </script>
+</body>
+</html>
